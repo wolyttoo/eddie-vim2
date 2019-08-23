@@ -35,7 +35,7 @@ then
 fi
 
 # check if git is installed
-hash git >/dev/null && /usr/bin/env git clone git://github.com/kaochenlong/eddie-vim2.git ~/.vim || {
+hash git >/dev/null && /usr/bin/env git clone git://github.com/wolyttoo/eddie-vim2.git ~/.vim || {
   echo "您必須先安裝 Git!"
   exit
 }
