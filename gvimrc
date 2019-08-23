@@ -12,11 +12,11 @@ else
 end
 
 if has("gui_running")
-  set transparency=0
+  "set transparency=0
 
   " disable default menu hot key
-  macmenu &File.New\ Window key=<nop>
-  macmenu &File.Close key=<nop>
+  "macmenu &File.New\ Window key=<nop>
+  "macmenu &File.Close key=<nop>
 
   " remap cmd + w to close tab
   map <D-w> :tabclose<CR>

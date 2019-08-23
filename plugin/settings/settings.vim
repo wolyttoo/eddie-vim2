@@ -40,6 +40,7 @@ syntax on                             " syntax highlight
 set hlsearch                          " search highlighting
 set incsearch                         " incremental search
 syntax enable
+let g:solarized_termcolors=256
 set t_Co=256
 try
   colorscheme solarized_dark
