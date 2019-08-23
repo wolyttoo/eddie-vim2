@@ -58,9 +58,9 @@ call s:InitVariable("g:NERDMenuMode", 3)
 call s:InitVariable("g:NERDLPlace", "[>")
 call s:InitVariable("g:NERDUsePlaceHolders", 1)
 call s:InitVariable("g:NERDRemoveAltComs", 1)
-call s:InitVariable("g:NERDRemoveExtraSpaces", 0)
+call s:InitVariable("g:NERDRemoveExtraSpaces", 1)
 call s:InitVariable("g:NERDRPlace", "<]")
-call s:InitVariable("g:NERDSpaceDelims", 0)
+call s:InitVariable("g:NERDSpaceDelims", 1)
 
 let s:NERDFileNameEscape="[]#*$%'\" ?`!&();<>\\"
 
@@ -2379,7 +2379,7 @@ endfunction
 function s:Left(...)
     let params = a:0 ? a:1 : {}
 
-    let delim = has_key(params, 'alt') ? b:NERDCommenterDelims['leftAlt'] : b:NERDCommenterDelims['left'] 
+    let delim = has_key(params, 'alt') ? b:NERDCommenterDelims['leftAlt'] : b:NERDCommenterDelims['left']
 
     if delim == ''
         return ''
@@ -2558,7 +2558,7 @@ endfunction
 function s:Right(...)
     let params = a:0 ? a:1 : {}
 
-    let delim = has_key(params, 'alt') ? b:NERDCommenterDelims['rightAlt'] : b:NERDCommenterDelims['right'] 
+    let delim = has_key(params, 'alt') ? b:NERDCommenterDelims['rightAlt'] : b:NERDCommenterDelims['right']
 
     if delim == ''
         return ''
